@@ -13,6 +13,6 @@ public class Student{
 
     @java.lang.Override
     public java.lang.String toString() {
-        return Integer.toString(rollNumber);
+        return Arrays.toString(rollNumber);
     }
 }
