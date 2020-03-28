@@ -10,4 +10,11 @@ public class Student{
     public void setRollNumber(int rollNumber) {
         this.rollNumber = rollNumber;
     }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Student{" +
+                "rollNumber=" + rollNumber +
+                '}';
+    }
 }
