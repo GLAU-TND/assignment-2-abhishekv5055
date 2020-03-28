@@ -14,7 +14,9 @@ public class MyMain {
         for (int i = 0; i < 5; i++) {
             rollNumber[i] = scanner.nextInt();
         }
-
-
+        Student student = new Student(rollNumber);
+        MyPriorityQueue<Student> myPriorityQueue = new MyPriorityQueue<>();
+        myPriorityQueue.enQueue(student);
+        myPriorityQueue.show();
     }
 }
