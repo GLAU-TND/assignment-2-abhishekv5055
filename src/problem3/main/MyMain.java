@@ -10,6 +10,7 @@ package problem3.main;
 public class MyMain {
     public static void main(String[] args) {
         int[] rollNumber = new int[5];
+        Scanner scanner = new Scanner(System.in);
 
 
     }
