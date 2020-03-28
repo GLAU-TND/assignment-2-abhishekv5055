@@ -6,5 +6,10 @@
  */
 package problem3.myqueue;
 
-public class MyPriorityQueue {
+public class MyPriorityQueue<Student> {
+    int size = 0;
+    int front = -1;
+    int rear = -1;
+    LinkedList<Student> linkedList = new LinkedList<>();
+
 }
