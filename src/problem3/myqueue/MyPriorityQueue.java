@@ -12,4 +12,9 @@ public class MyPriorityQueue<Student> {
     int rear = -1;
     LinkedList<Student> linkedList = new LinkedList<>();
 
+    public Student enQueue(Student data){
+        linkedList.add(++rear, data);
+        size++;
+    }
+
 }
