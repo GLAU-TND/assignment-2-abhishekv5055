@@ -16,5 +16,10 @@ public class MyPriorityQueue<Student> {
         linkedList.add(++rear, data);
         size++;
     }
+    public Student deQueue(){
+        size--;
+        front++;
+    }
+
 
 }
