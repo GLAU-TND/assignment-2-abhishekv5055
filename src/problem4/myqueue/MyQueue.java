@@ -30,5 +30,21 @@ public class MyQueue {
       public void setNext(problem4.myqueue.MyQueue.Node next) {
          this.next = next;
       }
+
+      public MyQueue(){
+         front = null;
+         rear = null;
+      }
+
+      public void enQueue(int data){
+         Node node = new Node();
+         node.setData(data);
+         if(front == null){
+            front = rear = node;
+         }else{
+            rear.setData(node);
+            rear = node;
+         }
+      }
    }
 }
