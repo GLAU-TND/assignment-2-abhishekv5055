@@ -53,5 +53,13 @@ public class MyQueue {
             preSuccessor(root.getRight());
          }
       }
+
+      public void getPreSuccessor(){
+         Node node = front.getNext();
+         while(node != null){
+            System.out.println(node.getData() + " ");
+            node = node.getNext();
+         }
+      }
    }
 }
