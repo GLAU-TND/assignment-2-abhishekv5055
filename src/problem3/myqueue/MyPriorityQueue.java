@@ -6,5 +6,24 @@
  */
 package problem3.myqueue;
 
-public class MyPriorityQueue {
+public class MyPriorityQueue<Student> {
+    int size = 0;
+    int front = -1;
+    int rear = -1;
+    LinkedList<Student> linkedList = new LinkedList<>();
+
+    public Student enQueue(Student data){
+        linkedList.add(++rear, data);
+        size++;
+    }
+    public Student deQueue(){
+        size--;
+        front++;
+    }
+
+    public void show(){
+        for (int i = 0; i < size; i++) {
+            System.out.print(linkedList.get(++front) + " ");
+        }
+    }
 }
